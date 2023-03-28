@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+  var loginCadastrado = "douglas";
+  var senhaCadastrada = "douglas321";
+  var erro = 1;
+
+  while(erro<=3){
+    
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+  if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+    alert("Bem-vindo ao sistema " + loginInformado);
+    erro = 3
+  } else {
+    if (erro == 3) {
+        alert("Número permitido de tentativas ultrapassado!");
+      } else {
+        alert("Login inválido. Tente novamente");
+      }
+  }
+
+    erro = erro + 1
+}
+</script>
